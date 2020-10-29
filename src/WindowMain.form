@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="WindowMain">
+  <grid id="27dc6" binding="main" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="500" height="459"/>
+    </constraints>
+    <properties>
+      <background color="-11113348"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="3ec45" layout-manager="GridBagLayout">
+        <constraints border-constraint="Center"/>
+        <properties>
+          <background color="-11113348"/>
+        </properties>
+        <border type="empty">
+          <size top="30" left="0" bottom="20" right="0"/>
+        </border>
+        <children>
+          <component id="9f2ed" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag top="0" left="30" bottom="0" right="10" weightx="0.0" weighty="0.1" ipady="20"/>
+            </constraints>
+            <properties>
+              <font name="Arial" size="14" style="1"/>
+              <foreground color="-1"/>
+              <text value="Source"/>
+            </properties>
+          </component>
+          <component id="b89bb" class="javax.swing.JTextField" binding="source">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+              <gridbag top="0" left="0" bottom="10" right="0" weightx="0.2" weighty="0.1" ipadx="10" ipady="20"/>
+            </constraints>
+            <properties>
+              <columns value="50"/>
+              <foreground color="-11113348"/>
+            </properties>
+          </component>
+          <component id="7e1cd" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="5" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag top="20" left="30" bottom="0" right="10" weightx="0.1" weighty="0.2" ipady="20"/>
+            </constraints>
+            <properties>
+              <font name="Arial" size="14" style="1"/>
+              <foreground color="-1"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value="Target"/>
+            </properties>
+          </component>
+          <scrollpane id="418af">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <gridbag top="10" left="0" bottom="10" right="40" weightx="0.0" weighty="0.0" ipady="20"/>
+            </constraints>
+            <properties>
+              <background color="-11113348"/>
+              <foreground color="-1"/>
+            </properties>
+            <border type="line" title="Carpetas en las que se mostrará los cambios">
+              <font/>
+              <title-color color="-1"/>
+              <color color="-13870971"/>
+            </border>
+            <children>
+              <component id="51fe4" class="javax.swing.JTextArea" binding="targets">
+                <constraints/>
+                <properties>
+                  <columns value="50"/>
+                  <foreground color="-11113348"/>
+                  <rows value="10"/>
+                </properties>
+              </component>
+            </children>
+          </scrollpane>
+          <grid id="77588" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <background color="-11113348"/>
+            </properties>
+            <border type="empty">
+              <size top="30" left="0" bottom="0" right="0"/>
+            </border>
+            <children/>
+          </grid>
+          <component id="a269d" class="javax.swing.JButton" binding="start">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <gridbag top="0" left="0" bottom="0" right="40" weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <foreground color="-11113348"/>
+              <text value="Watch"/>
+              <toolTipText value="Empezar a monitorear la carpeta"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <scrollpane id="a863">
+        <constraints border-constraint="South"/>
+        <properties>
+          <background color="-11969170"/>
+        </properties>
+        <border type="empty" title="Logger">
+          <title-color color="-1"/>
+          <size top="0" left="10" bottom="10" right="10"/>
+        </border>
+        <children>
+          <component id="c6c9" class="javax.swing.JTextArea" binding="log">
+            <constraints/>
+            <properties>
+              <background color="-13418423"/>
+              <columns value="72"/>
+              <editable value="true"/>
+              <foreground color="-400081"/>
+              <rows value="3"/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+    </children>
+  </grid>
+</form>
